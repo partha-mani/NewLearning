@@ -12,6 +12,7 @@ public class Main {
         System.out.println("Please enter the deposit amount: ");
             double deposit_amount = input_deposit.nextDouble();
         myAccount.deposit(deposit_amount);     // Interface method
+        System.out.println("Current balance: " + myAccount.getBalance());
         Scanner input_withdraw = new Scanner(System.in);
         System.out.println("Please enter the withdraw amount: ");
         double withdraw_amount = input_withdraw.nextDouble();
